@@ -39,8 +39,11 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Full-Stack Web Developer with a proven ability to adapt in
+              bothself-starting and collaborative environments while staying
+              focused onachieving high-quality results under a strict deadline.
+              Eager to obtain a challenging position at a prestigious company
+              that willexpand my learning and builds upon my developer skills.
               <br />
               <br />I am fluent in
               <i>
@@ -68,8 +71,50 @@ function Home2() {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+          <Col md={12} className="home-about-social" id="contact">
+            <h1>
+              GET IN <span class="purple">TOUCH</span>
+            </h1>
+            <p>
+              Feel free to send a <span className="purple">message</span> for me
+            </p>
+            <form onSubmit={sendEmail}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name..."
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email..."
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject..."
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your message..."
+                required
+              ></textarea>
+              <Button variant="primary" type="submit">
+                Send Message
+              </Button>
+            </form>
+          </Col>
+          <Col
+            md={12}
+            className="home-about-social"
+            style={{ marginTop: '40px' }}
+          >
+            <h1>
+              FIND <span class="purple">ME</span> ON
+            </h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
@@ -105,40 +150,6 @@ function Home2() {
                 </a>
               </li>
             </ul>
-          </Col>
-          <Col md={12} className="home-about-social" id="contact">
-            <h1>CONTACT</h1>
-            <p>
-              Feel free to send a <span className="purple">message</span> for me
-            </p>
-            <form onSubmit={sendEmail}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name..."
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email..."
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject..."
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Your message..."
-                required
-              ></textarea>
-              <Button variant="primary" type="submit">
-                Send Message
-              </Button>
-            </form>
           </Col>
         </Row>
       </Container>
