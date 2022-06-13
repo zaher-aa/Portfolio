@@ -1,11 +1,35 @@
 import React from 'react';
+import emailjs from '@emailjs/browser';
 import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/avatar.svg';
 import Tilt from 'react-parallax-tilt';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn, FaFacebook } from 'react-icons/fa';
+import { Button } from 'react-bootstrap';
 
 function Home2() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_ka7d8pr',
+        'template_9yi55ha',
+        e.target,
+        'bsLjp_5OxfmvS-MR8'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -82,9 +106,44 @@ function Home2() {
               </li>
             </ul>
           </Col>
+          <Col md={12} className="home-about-social" id="contact">
+            <h1>CONTACT</h1>
+            <p>
+              Feel free to send a <span className="purple">message</span> for me
+            </p>
+            <form onSubmit={sendEmail}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name..."
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email..."
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject..."
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your message..."
+                required
+              ></textarea>
+              <Button variant="primary" type="submit">
+                Send Message
+              </Button>
+            </form>
+          </Col>
         </Row>
       </Container>
     </Container>
   );
 }
+
 export default Home2;

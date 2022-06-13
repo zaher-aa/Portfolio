@@ -732,6 +732,9 @@ button:focus {
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
+  font-size: 1rem !important;
+  margin-top: 7px !important;
+  border-radius: 0.25rem !important;
 }
 
 .fork-btn-inner:hover {
@@ -741,4 +744,21 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+form > input,
+form textarea {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 200px;
 }
