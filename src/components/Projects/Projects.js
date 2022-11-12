@@ -6,6 +6,7 @@ import blogPost from '../../Assets/Projects/blog-post.png';
 import redditClone from '../../Assets/Projects/reddit-clone.jpeg';
 import quizzer from '../../Assets/Projects/quizzer.png';
 import estore from '../../Assets/Projects/estore.png';
+import nextupComedy from '../../Assets/Projects/nextup-comedy.png';
 
 function Projects() {
   return (
@@ -19,6 +20,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nextupComedy}
+              isBlog={false}
+              title="NextUp Comedy"
+              description="A comedy filming and distribution platform that showcases the most exciting comedians to a worldwide audience of comedy fans."
+              code="https://github.com/NextUp-comedy"
+              demo="https://nextup-comedy.netlify.app"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={quizzer}
