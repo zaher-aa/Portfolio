@@ -7,7 +7,7 @@ import {
   SiRedux,
   SiExpress,
   SiSass,
-  SiMaterialui,
+  SiMui,
   SiAntdesign,
   SiReactrouter,
   SiEslint,
@@ -43,7 +43,7 @@ function Techstack() {
         <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
+        <SiMui />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAntdesign />
