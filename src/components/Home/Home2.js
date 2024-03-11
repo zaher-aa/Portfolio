@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/avatar.svg';
 import Tilt from 'react-parallax-tilt';
 import { AiFillGithub } from 'react-icons/ai';
-import { FaLinkedinIn, FaFacebook } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 
 function Home2() {
@@ -39,7 +39,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Full-Stack Web Developer with a proven ability to adapt in
+              Full-Stack Web Developer student with a proven ability to adapt in
               bothself-starting and collaborative environments while staying
               focused onachieving high-quality results under a strict deadline.
               Eager to obtain a challenging position at a prestigious company
@@ -137,16 +137,6 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.facebook.com/ZaherAbuAmr/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <FaFacebook />
                 </a>
               </li>
             </ul>
