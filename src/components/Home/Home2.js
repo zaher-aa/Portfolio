@@ -39,7 +39,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Full-Stack Web Developer student with a proven ability to adapt in
+              Full-Stack Web Developer with a proven ability to adapt in
               bothself-starting and collaborative environments while staying
               focused onachieving high-quality results under a strict deadline.
               Eager to obtain a challenging position at a prestigious company
